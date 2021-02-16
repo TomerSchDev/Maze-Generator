@@ -74,7 +74,7 @@ public class Display extends Canvas implements Runnable {
      * The general contract of the method <code>run</code> is that it may
      * take any action whatsoever.
      *
-     * @see Thread#run() Thread#run()
+     * @see Thread#run() Thread#run()Thread#run()
      */
     @Override
     public void run() {
@@ -98,11 +98,17 @@ public class Display extends Canvas implements Runnable {
     }
 
 
+    /**
+     * Update.
+     */
     private void update() {
         Main.updateGame();
     }
 
 
+    /**
+     * Render.
+     */
     private void render() {
         BufferStrategy bs = this.getBufferStrategy();
         if (bs == null) {
